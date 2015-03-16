@@ -3,6 +3,8 @@ Directly injected CSS
 
 Forget SASS. Forget LESS. What you want is DICSS. Once you've had DICSS, you won't settle for LESS.
 
+Tired of separate build processes for your CSS and JS files? Fret no more. DICSS is Javascript. That means you can code your styles and your scripts in _one language_, and compile and minify everything to a single file. Once you try it, we're sure you'll love DICSS.
+
 ## Is it safe?
 Don't worry. DICSS uses a wrapper.
 
@@ -44,8 +46,17 @@ DICSS keeps on growing! Some popular DICSS add-ons include
 
 Got something you want to add to DICSS? Let us know! Help us make DICSS bigger and better than ever!
 
+## Is DICSS compatible with other frameworks?
+Yes! There are projects currently underway to integrate DICSS with Knockout (KOCSS), Backbone (BoneDICSS), and Angular (Angular-DICSS).
+
 ## It's not working. Help!
 Is it in yet? Go to your developer tools console and type `DICSS`. If it's `undefined`, that means you haven't put DICSS in yet. 
 
-## Is DICSS compatible with other frameworks?
-Yes! There are projects currently underway to integrate DICSS with Knockout (KOCSS), Backbone (BoneDICSS), and Angular (Angular-DICSS).
+## It's still not working!
+Don't overthink it. DICSS is only as hard as you make it.
+
+## I don't like DICSS.
+That's okay. While we believe most people are fond of DICSS, we realize that DICSS isn't for everyone. There are plenty of alternatives. Feel free to use them instead. And please, never force someone to use DICSS if they're not willing.
+
+## THIS IS NUTS!
+No, we're DICSS. NUTS is something else.

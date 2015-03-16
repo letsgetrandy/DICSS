@@ -2,6 +2,10 @@
 (function() {
 	'use strict';
 
+	if ( ({})<=8 ) {
+		// yeah, you get it...
+	}
+
 	var stylesheet, styletag = document.createElement('style');
 	styletag.setAttribute('id', 'dicss_wrapper');
 	document.body.appendChild(styletag);
@@ -35,6 +39,15 @@
 					}
 					break;
 				}
+			}
+		}
+	}
+
+	function extend(obj) {
+		var attr;
+		for (attr in obj) {
+			if (obj.hasOwnProperty(attr)) {
+				window.DICSS[attr] = obj[attr];
 			}
 		}
 	}

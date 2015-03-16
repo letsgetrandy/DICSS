@@ -30,6 +30,22 @@ DICSS.pullOut('p');
 
 Advanced node users have even been putting DICSS in their back-end, but help with this use-case is beyond the scope of this document.
 
-
 ## Why no min version?
 It's not the size of DICSS that matters, it's what you can do with it.
+
+## Can DICSS be extended?
+Yes! You can add whatever you want to DICSS. Just pass an object of methods into `DICSS.extend()`.
+
+DICSS keeps on growing! Some popular DICSS add-ons include
+
+* *COCSS* (cross-origin DICSS),
+* *SECSS* (security enhanced DICSS)
+* *Circum-Sizer* (calculate the circumference of a rounded element in CSS)
+
+Got something you want to add to DICSS? Let us know! Help us make DICSS bigger and better than ever!
+
+## It's not working. Help!
+Is it in yet? Go to your developer tools console and type `DICSS`. If it's `undefined`, that means you haven't put DICSS in yet. 
+
+## Is DICSS compatible with other frameworks?
+Yes! There are projects currently underway to integrate DICSS with Knockout (KOCSS), Backbone (BoneDICSS), and Angular (Angular-DICSS).

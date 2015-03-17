@@ -23,7 +23,10 @@ Then, go ahead and start putting DICSS in! Put 'em everywhere you like. Nobody w
 DICSS.putIn('body', 'margin: 0');
 DICSS.putIn('p', {
     "height": "100%",
-    "width": "100%"
+    "width": "100%",
+    "a": {
+        "color": "#fff"
+    }
 });
 ```
 

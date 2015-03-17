@@ -12,7 +12,7 @@
 	stylesheet = styletag.sheet ? styletag.sheet : styletag.styleSheet;
 
 	function addRule(selector, rule) {
-		var rules = '', property;
+		var rules = '', property, value;
 		if (!rule) {
 			throw 'You forgot to put the DICSS in.';
 		}
@@ -20,7 +20,12 @@
 			rules += rule;
 		} else {
 			for (property in rule) {
-				rules += property + ':' + rule[property] + ';';
+				value = rule[property];
+				if (value instanceof Object) {
+					addRule(selector + ' ' + property, value);
+					continue;
+				}
+				rules += property + ':' + value + ';';
 			}
 		}
 		if (stylesheet.insertRule) {

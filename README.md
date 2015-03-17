@@ -1,3 +1,5 @@
+[![build status][travis-image]][travis-url]
+
 # DICSS
 Directly injected CSS
 
@@ -73,3 +75,7 @@ That's okay. While we believe most people are fond of DICSS, we realize that DIC
 
 ## THIS IS NUTS!
 No, this is DICSS. NUTS is something else.
+
+
+[travis-image]: https://img.shields.io/travis/letsgetrandy/DICSS/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/letsgetrandy/DICSS

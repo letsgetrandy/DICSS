@@ -48,12 +48,19 @@ DICSS keeps on growing! Some popular DICSS add-ons include
 
 * *COCSS* (cross-origin DICSS),
 * *SECSS* (security enhanced DICSS)
+* *DICSS-Pics (DICSS plugin for working with images)
 * *Circum-Sizer* (calculate the circumference of a rounded element in CSS)
+
+Okay, so we admit, those add-ons don't actually exist yet. But there's nothing stopping you from making them!
 
 Got something you want to add to DICSS? Let us know! Help us make DICSS bigger and better than ever!
 
+
 ## Is DICSS compatible with other frameworks?
 Yes! There are projects currently underway to integrate DICSS with Knockout (KOCSS), Backbone (BoneDICSS), and Angular (Angular-DICSS).
+
+## Does DICSS work with LaTeX?
+Yes, but it takes longer.
 
 ## It's not working. Help!
 Is it in yet? Go to your developer tools console and type `DICSS`. If it's `undefined`, that means you haven't put DICSS in yet. 
@@ -65,4 +72,4 @@ Don't overthink it. DICSS is only as hard as you make it.
 That's okay. While we believe most people are fond of DICSS, we realize that DICSS isn't for everyone. There are plenty of alternatives. Feel free to use them instead. And please, never force someone to use DICSS if they're not willing.
 
 ## THIS IS NUTS!
-No, we're DICSS. NUTS is something else.
+No, this is DICSS. NUTS is something else.

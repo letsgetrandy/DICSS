@@ -12,12 +12,23 @@
 	stylesheet = styletag.sheet ? styletag.sheet : styletag.styleSheet;
 
 	function addRule(selector, rule) {
+		var rules = '', property;
+		if (!rule) {
+			throw 'You forgot to put the DICSS in.';
+		}
+		if (rule.constructor instanceof String) {
+			rules += rule;
+		} else {
+			for (property in rule) {
+				rules += property + ':' + rule[property] + ';';
+			}
+		}
 		if (stylesheet.insertRule) {
-			stylesheet.insertRule(selector + ' { ' + rule + ' } ', stylesheet.cssRules.length);
+			stylesheet.insertRule(selector + ' { ' + rules + ' } ', stylesheet.cssRules.length);
 		} else {
 			// IE <9
 			if (stylesheet.addRule) {
-				stylesheet.addRule(selector, rule);
+				stylesheet.addRule(selector, rules);
 			}
 		}
 	}

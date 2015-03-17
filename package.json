@@ -1,0 +1,29 @@
+{
+  "name": "DICSS",
+  "version": "1.0.0",
+  "description": "Directly Injected CSS",
+  "main": "dicss.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/letsgetrandy/DICSS.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Randy Hunt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/letsgetrandy/DICSS/issues"
+  },
+  "homepage": "https://github.com/letsgetrandy/DICSS",
+  "devDependencies": {
+    "eslint": "^0.17.0",
+    "mocha": "^2.2.1"
+  }
+}

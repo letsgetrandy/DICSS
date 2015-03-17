@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <title>tests : plus</title>
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script>
+      mocha.setup('bdd');
+      expect = chai.expect;
+    </script>
+    <script src="../dicss.js"></script>
+    <script src="dicss.spec.js"></script>
+    <script>
+      if (window.mochaPhantomJS) {
+        mochaPhantomJS.run();
+      } else {
+        mocha.run();
+      }
+     </script>
+   </body>
+</html>

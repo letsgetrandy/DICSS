@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>DICSS by letsgetrandy</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>DICSS</h1>
+        <h2>Directly injected CSS</h2>
+        <a href="https://github.com/letsgetrandy/DICSS" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p><a href="https://travis-ci.org/letsgetrandy/DICSS"><img src="https://img.shields.io/travis/letsgetrandy/DICSS/master.svg?style=flat-square" alt="build status"></a></p>
+
+<h1>
+<a id="dicss" class="anchor" href="#dicss" aria-hidden="true"><span class="octicon octicon-link"></span></a>DICSS</h1>
+
+<p>Directly injected CSS</p>
+
+<p>Forget SASS. Forget LESS. What you want is DICSS. Once you've had DICSS, you won't settle for LESS.</p>
+
+<p>Tired of separate build processes for your CSS and JS files? Fret no more. DICSS is Javascript. That means you can code your styles and your scripts in <em>one language</em>, and compile and minify everything to a single file. Once you try it, we're sure you'll love DICSS.</p>
+
+<h2>
+<a id="is-it-safe" class="anchor" href="#is-it-safe" aria-hidden="true"><span class="octicon octicon-link"></span></a>Is it safe?</h2>
+
+<p>Don't worry. DICSS uses a wrapper.</p>
+
+<h2>
+<a id="how-do-you-use-dicss" class="anchor" href="#how-do-you-use-dicss" aria-hidden="true"><span class="octicon octicon-link"></span></a>How do you use DICSS?</h2>
+
+<p>Just grab DICSS and stick it wherever you like. DICSS works equally well in your <code>&lt;head&gt;</code> or in your <code>&lt;body&gt;</code>.</p>
+
+<pre><code>&lt;head&gt;
+&lt;script src="dicss.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code></pre>
+
+<p>Then, go ahead and start putting DICSS in! Put 'em everywhere you like. Nobody will judge you for what you do with your DICSS.</p>
+
+<pre><code>DICSS.putIn('body', 'margin: 0');
+DICSS.putIn('p', {
+    "height": "100%",
+    "width": "100%",
+    "a": {
+        "color": "#fff"
+    }
+});
+</code></pre>
+
+<p>And when you're done with a style, you can easily remove it:</p>
+
+<pre><code>DICSS.pullOut('p');
+</code></pre>
+
+<p>Advanced node users have even been putting DICSS in their back-end, but help with this use-case is beyond the scope of this document.</p>
+
+<h2>
+<a id="why-no-min-version" class="anchor" href="#why-no-min-version" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why no min version?</h2>
+
+<p>It's not the size of DICSS that matters, it's what you can do with it.</p>
+
+<h2>
+<a id="can-dicss-be-extended" class="anchor" href="#can-dicss-be-extended" aria-hidden="true"><span class="octicon octicon-link"></span></a>Can DICSS be extended?</h2>
+
+<p>Yes! You can add whatever you want to DICSS. Just pass an object of methods into <code>DICSS.extend()</code>.</p>
+
+<p>DICSS keeps on growing! Some popular DICSS add-ons include</p>
+
+<ul>
+<li>
+<em>COCSS</em> (cross-origin DICSS),</li>
+<li>
+<em>SECSS</em> (security enhanced DICSS)</li>
+<li>*DICSS-Pics (DICSS plugin for working with images)</li>
+<li>
+<em>Circum-Sizer</em> (calculate the circumference of a rounded element in CSS)</li>
+</ul>
+
+<p>Okay, so we admit, those add-ons don't actually exist yet. But there's nothing stopping you from making them!</p>
+
+<p>Got something you want to add to DICSS? Let us know! Help us make DICSS bigger and better than ever!</p>
+
+<h2>
+<a id="is-dicss-compatible-with-other-frameworks" class="anchor" href="#is-dicss-compatible-with-other-frameworks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Is DICSS compatible with other frameworks?</h2>
+
+<p>Yes! There are projects currently underway to integrate DICSS with Knockout (KOCSS), Backbone (BoneDICSS), and Angular (Angular-DICSS).</p>
+
+<h2>
+<a id="does-dicss-work-with-latex" class="anchor" href="#does-dicss-work-with-latex" aria-hidden="true"><span class="octicon octicon-link"></span></a>Does DICSS work with LaTeX?</h2>
+
+<p>Yes, but it takes longer.</p>
+
+<h2>
+<a id="its-not-working-help" class="anchor" href="#its-not-working-help" aria-hidden="true"><span class="octicon octicon-link"></span></a>It's not working. Help!</h2>
+
+<p>Is it in yet? Go to your developer tools console and type <code>DICSS</code>. If it's <code>undefined</code>, that means you haven't put DICSS in yet. </p>
+
+<h2>
+<a id="its-still-not-working" class="anchor" href="#its-still-not-working" aria-hidden="true"><span class="octicon octicon-link"></span></a>It's still not working!</h2>
+
+<p>Don't overthink it. DICSS is only as hard as you make it.</p>
+
+<h2>
+<a id="i-dont-like-dicss" class="anchor" href="#i-dont-like-dicss" aria-hidden="true"><span class="octicon octicon-link"></span></a>I don't like DICSS.</h2>
+
+<p>That's okay. While we believe most people are fond of DICSS, we realize that DICSS isn't for everyone. There are plenty of alternatives. Feel free to use them instead. And please, never force someone to use DICSS if they're not willing.</p>
+
+<h2>
+<a id="this-is-nuts" class="anchor" href="#this-is-nuts" aria-hidden="true"><span class="octicon octicon-link"></span></a>THIS IS NUTS!</h2>
+
+<p>No, this is DICSS. NUTS is something else.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/letsgetrandy/DICSS/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/letsgetrandy/DICSS/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/letsgetrandy/DICSS"></a> is maintained by <a href="https://github.com/letsgetrandy">letsgetrandy</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>

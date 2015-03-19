@@ -68,10 +68,26 @@ DICSS.putIn('p', {
 
 <p>And when you're done with a style, you can easily remove it:</p>
 
-<pre><code>DICSS.pullOut('p');
+<pre><code>DICSS.pullOut('a', 'color');
 </code></pre>
 
-<p>Advanced node users have even been putting DICSS in their back-end, but help with this use-case is beyond the scope of this document.</p>
+<h2>
+<a id="the-possibilities-are-endless" class="anchor" href="#the-possibilities-are-endless" aria-hidden="true"><span class="octicon octicon-link"></span></a>The possibilities are endless</h2>
+
+<p>Since DICSS accepts JSON objects as styles, you can keep your CSS organized very methodically:</p>
+
+<pre><code>var widgetDICSS = {
+    'div.widget': {
+        'a': {
+            font: '1em Verdana,Arial,sans-serif',
+            margin: '.5em'
+        }
+        //... etc
+    }
+};
+</code></pre>
+
+<p>In fact, there's no reason you couldn't put your DICSS in the back-end, and then deliver them to the client, as needed, via REST service.</p>
 
 <h2>
 <a id="why-no-min-version" class="anchor" href="#why-no-min-version" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why no min version?</h2>

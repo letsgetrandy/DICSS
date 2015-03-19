@@ -35,10 +35,25 @@ DICSS.putIn('p', {
 And when you're done with a style, you can easily remove it:
 
 ```
-DICSS.pullOut('p');
+DICSS.pullOut('a', 'color');
 ```
 
-Advanced node users have even been putting DICSS in their back-end, but help with this use-case is beyond the scope of this document.
+## The possibilities are endless
+Since DICSS accepts JSON objects as styles, you can keep your CSS organized very methodically:
+
+```
+var widgetDICSS = {
+	'div.widget': {
+		'a': {
+			font: '1em Verdana,Arial,sans-serif',
+			margin: '.5em'
+		}
+		//... etc
+	}
+};
+```
+
+In fact, there's no reason you couldn't put your DICSS in the back-end, and then deliver them to the client, as needed, via REST service.
 
 ## Why no min version?
 It's not the size of DICSS that matters, it's what you can do with it.

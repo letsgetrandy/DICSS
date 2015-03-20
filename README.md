@@ -3,7 +3,7 @@
 # DICSS
 Directly injected CSS
 
-Forget SASS. Forget LESS. What you want is DICSS. Once you've had DICSS, you won't settle for LESS.
+Forget Sass. Forget LESS. What you want is DICSS. Once you've had DICSS, you won't settle for LESS.
 
 Tired of separate build processes for your CSS and JS files? Fret no more. DICSS is Javascript. That means you can code your styles and your scripts in _one language_, and compile and minify everything to a single file. Once you try it, we're sure you'll love DICSS.
 

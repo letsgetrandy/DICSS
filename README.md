@@ -26,6 +26,9 @@ DICSS.putIn('body', 'margin: 0');
 DICSS.putIn('p', {
     "height": "100%",
     "width": "100%",
+    "&.protection": {
+        "border": "solid 1px transparent"
+    },
     "a": {
         "color": "#fff"
     }

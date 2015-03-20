@@ -13,20 +13,21 @@
 
 	function addRule(selector, rule) {
 		var rules = '', property, value;
-		if (!rule) {
-			throw 'You forgot to put the DICSS in.';
-		}
-		if (rule.constructor instanceof String) {
+		if (rule.constructor === String) {
 			rules += rule;
 		} else {
 			for (property in rule) {
 				value = rule[property];
 				if (value instanceof Object) {
-					addRule(selector + ' ' + property, value);
+					property = (/^:|&/.test(property) ? '' : ' ') + property.replace('&', '');
+					addRule(selector + property, value);
 					continue;
 				}
 				rules += property + ':' + value + ';';
 			}
+		}
+		if (!rules) {
+			return;
 		}
 		if (stylesheet.insertRule) {
 			stylesheet.insertRule(selector + ' { ' + rules + ' } ', stylesheet.cssRules.length);
@@ -69,7 +70,22 @@
 	}
 
 	window.DICSS = {
-		"putIn": addRule,
+		"putIn": function(selector, properties) {
+			if (properties !== void 0) {
+				addRule.apply(this, arguments);
+				return
+			}
+			try {
+				selector = JSON.parse(selector);
+			} catch (err) {
+				if (typeof selector === 'string') {
+					throw 'You forgot to put the DICSS in - ' + err;
+				}
+			}
+			for (properties in selector) {
+				addRule(properties, selector[properties]);
+			}
+		},
 		"pullOut": removeRule
 	};
 })();

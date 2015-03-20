@@ -1,5 +1,5 @@
 // dicss -- directly injected css
-(function() {
+(function(window, document) {
 	'use strict';
 
 	if ( ({})<=8 ) {
@@ -88,4 +88,4 @@
 		},
 		"pullOut": removeRule
 	};
-})();
+})(window, document);

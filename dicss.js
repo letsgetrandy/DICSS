@@ -28,10 +28,6 @@
 	function addRule(selector, rule) {
 		var rules = '', property, value;
 
-        if (!styletag) {
-            injectStyles();
-        }
-
 		if (rule.constructor === String) {
 			rules += rule;
 		} else {
@@ -101,6 +97,11 @@
 					throw 'You forgot to put the DICSS in - ' + err;
 				}
 			}
+
+	        if (!styletag) {
+	            injectStyles();
+	        }
+
 			for (properties in selector) {
 				addRule(properties, selector[properties]);
 			}

@@ -7,6 +7,8 @@ Forget Sass. Forget LESS. What you want is DICSS. Once you've had DICSS, you won
 
 Tired of separate build processes for your CSS and JS files? Fret no more. DICSS is Javascript. That means you can code your styles and your scripts in _one language_, and compile and minify everything to a single file. Once you try it, we're sure you'll love DICSS.
 
+DICSS is fun and easy to use!
+
 ## Is it safe?
 Don't worry. DICSS uses a wrapper.
 

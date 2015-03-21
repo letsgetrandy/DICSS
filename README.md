@@ -89,7 +89,7 @@ Is it in yet? Go to your developer tools console and type `DICSS`. If it's `unde
 Don't overthink it. DICSS is only as hard as you make it.
 
 ## Can't you give me a hand?
-Open an issue and we'll be happy to lend you a quick hand.
+Open an issue and we'll be happy to lend you a helping hand.
 
 ## I don't like DICSS.
 That's okay. While we believe most people are fond of DICSS, we realize that DICSS isn't for everyone. There are plenty of alternatives. Feel free to use them instead. And please, never force someone to use DICSS if they're not willing.
@@ -99,4 +99,6 @@ No, this is DICSS. NUTS is something else.
 
 
 [travis-image]: https://img.shields.io/travis/letsgetrandy/DICSS/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/letsgetrandy/DICSS
+[travis-url]: https://travis-ci.org/letsgetrandy/DICSS
+
+

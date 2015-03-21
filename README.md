@@ -83,10 +83,13 @@ Yes! There are projects currently underway to integrate DICSS with Knockout (KOC
 Yes, but it takes longer.
 
 ## It's not working. Help!
-Is it in yet? Go to your developer tools console and type `DICSS`. If it's `undefined`, that means you haven't put DICSS in yet. 
+Is it in yet? Go to your developer tools console and type `DICSS`. If it's `undefined`, that means you haven't put DICSS in yet.
 
 ## It's still not working!
 Don't overthink it. DICSS is only as hard as you make it.
+
+## Can't you give me a hand?
+Open an issue and we'll be happy to lend you a quick hand.
 
 ## I don't like DICSS.
 That's okay. While we believe most people are fond of DICSS, we realize that DICSS isn't for everyone. There are plenty of alternatives. Feel free to use them instead. And please, never force someone to use DICSS if they're not willing.
@@ -96,4 +99,4 @@ No, this is DICSS. NUTS is something else.
 
 
 [travis-image]: https://img.shields.io/travis/letsgetrandy/DICSS/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/letsgetrandy/DICSS
+[travis-url]: https://travis-ci.org/letsgetrandy/DICSS

@@ -15,7 +15,7 @@ Just grab DICSS and stick it wherever you like. DICSS works equally well in your
 
 ```
 <head>
-<script src="dicss.js"></script>
+    <script src="dicss.js"></script>
 </head>
 ```
 

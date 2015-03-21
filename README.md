@@ -1,7 +1,7 @@
 [![build status][travis-image]][travis-url]
 
 # DICSS
-Directly injected CSS
+Directly injected CSS - Finally, Sass has some _stiff_ competition!
 
 Forget Sass. Forget LESS. What you want is DICSS. Once you've had DICSS, you won't settle for LESS.
 

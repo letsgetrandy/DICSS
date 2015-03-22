@@ -43,6 +43,11 @@ And when you're done with a style, you can easily remove it:
 DICSS.pullOut('a', 'color');
 ```
 
+If you already have the style in an element, you can just copy it:
+```
+DICSS.strapOn('#myModel','h2')
+```
+
 ## The possibilities are endless
 Since DICSS accepts JSON objects as styles, you can keep your CSS organized very methodically:
 

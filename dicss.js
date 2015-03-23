@@ -86,6 +86,12 @@
 				addRule(properties, selector[properties]);
 			}
 		},
-		"pullOut": removeRule
+		"pullOut": removeRule,
+		"strapOn": function(parentElemId, selector) {
+			var strapOnStyle = window.getComputedStyle(document.getElementById(parentElemId), null).cssText;
+			var dicssHolder = document.getElementById("dicss_wrapper");
+
+			dicssHolder.innerHTML = dicssHolder.innerHTML + selector + ' { ' + strapOnStyle + ' } ';
+		}
 	};
 })();

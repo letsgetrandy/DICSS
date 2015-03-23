@@ -24,7 +24,7 @@ Just grab DICSS and stick it wherever you like. DICSS works equally well in your
 Then, go ahead and start putting DICSS in! Put 'em everywhere you like. Nobody will judge you for what you do with your DICSS.
 
 ```
-DICSS.putIn('body', 'margin: 0');
+DICSS.putIn('body', 'transition: .1s linear');
 DICSS.putIn('p', {
     "height": "100%",
     "width": "100%",

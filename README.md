@@ -93,7 +93,7 @@ Don't overthink it. DICSS is only as hard as you make it.
 ## I don't like DICSS.
 That's okay. While we believe most people are fond of DICSS, we realize that DICSS isn't for everyone. There are plenty of alternatives. Feel free to use them instead. And please, never force someone to use DICSS if they're not willing.
 
-# Performance has gotten worse. It doesn't come up as fast as it used to.
+## Performance has gotten worse. It doesn't come up as fast as it used to.
 Maybe you're using DICSS in the lower `<body>`? Some people experience faster response times using `<head>` or delivering DICSS through the backend.
 
 ## THIS IS NUTS!

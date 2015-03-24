@@ -2,7 +2,7 @@
 describe('DICSS', function() {
     'use strict';
 
-    var stylesheet = document.querySelector('#dicss_wrapper');
+    var stylesheet;
 
     it('should be pulled', function() {
         expect(window.DICSS).not.to.equal(void 0);
@@ -14,6 +14,7 @@ describe('DICSS', function() {
                 "display": "block"
             }
         }));
+        stylesheet = document.querySelector('#dicss_wrapper');
         var rules = stylesheet.sheet.cssRules;
         expect(rules[rules.length - 1].cssText).to.equal('span { display: block; }');
     });
@@ -42,6 +43,12 @@ describe('DICSS', function() {
         var rules = stylesheet.sheet.cssRules;
         expect(rules[rules.length - 1].cssText).to.equal('h1.active { color: white; }');
     });
+
+    it ('should remove styles', function() {
+        DICSS.remove();
+        expect(document.querySelector('#dicss_wrapper')).to.equal(null);
+    });
+
 
 });
 

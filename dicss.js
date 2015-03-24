@@ -1,18 +1,33 @@
 // dicss -- directly injected css
-(function() {
+(function(window, document) {
 	'use strict';
 
 	if ( ({})<=8 ) {
 		// yeah, you get it...
 	}
 
-	var stylesheet, styletag = document.createElement('style');
-	styletag.setAttribute('id', 'dicss_wrapper');
-	document.body.appendChild(styletag);
-	stylesheet = styletag.sheet ? styletag.sheet : styletag.styleSheet;
+    var stylesheet, styletag;
+
+    function injectStyles() {
+        if (!styletag) {
+            styletag = document.createElement('style');
+            styletag.setAttribute('id', 'dicss_wrapper');
+            document.body.appendChild(styletag);
+            stylesheet = styletag.sheet ? styletag.sheet : styletag.styleSheet;
+        }
+    }
+
+    function removeStyles() {
+        if (styletag) {
+            styletag.parentNode.removeChild(styletag);
+            styletag = null;
+            stylesheet = null;
+        }
+    }
 
 	function addRule(selector, rule) {
 		var rules = '', property, value;
+
 		if (rule.constructor === String) {
 			rules += rule;
 		} else {
@@ -73,7 +88,7 @@
 		"putIn": function(selector, properties) {
 			if (properties !== void 0) {
 				addRule.apply(this, arguments);
-				return
+				return;
 			}
 			try {
 				selector = JSON.parse(selector);
@@ -82,10 +97,17 @@
 					throw 'You forgot to put the DICSS in - ' + err;
 				}
 			}
+
+	        if (!styletag) {
+	            injectStyles();
+	        }
+
 			for (properties in selector) {
 				addRule(properties, selector[properties]);
 			}
 		},
-		"pullOut": removeRule
+		"pullOut": removeRule,
+		"remove": removeStyles
+
 	};
-})();
+})(window, document);

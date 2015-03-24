@@ -15,7 +15,7 @@ Don't worry. DICSS uses a wrapper.
 ## How do you use DICSS?
 Just grab DICSS and stick it wherever you like. DICSS works equally well in your `<head>` or in your `<body>`.
 
-```
+```html
 <head>
     <script src="dicss.js"></script>
 </head>
@@ -23,7 +23,7 @@ Just grab DICSS and stick it wherever you like. DICSS works equally well in your
 
 Then, go ahead and start putting DICSS in! Put 'em everywhere you like. Nobody will judge you for what you do with your DICSS.
 
-```
+```js
 DICSS.putIn('body', 'transition: .1s linear');
 DICSS.putIn('p', {
     "height": "100%",
@@ -39,14 +39,14 @@ DICSS.putIn('p', {
 
 And when you're done with a style, you can easily remove it:
 
-```
+```js
 DICSS.pullOut('a', 'color');
 ```
 
 ## The possibilities are endless
 Since DICSS accepts JSON objects as styles, you can keep your CSS organized very methodically:
 
-```
+```js
 var widgetDICSS = {
 	'div.widget': {
 		'a': {

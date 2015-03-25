@@ -33,11 +33,13 @@
 <h1>
 <a id="dicss" class="anchor" href="#dicss" aria-hidden="true"><span class="octicon octicon-link"></span></a>DICSS</h1>
 
-<p>Directly injected CSS</p>
+<p>Directly injected CSS - Finally, Sass has some <em>stiff</em> competition!</p>
 
-<p>Forget SASS. Forget LESS. What you want is DICSS. Once you've had DICSS, you won't settle for LESS.</p>
+<p>Forget Sass. Forget LESS. What you want is DICSS. Once you've had DICSS, you won't settle for LESS.</p>
 
 <p>Tired of separate build processes for your CSS and JS files? Fret no more. DICSS is Javascript. That means you can code your styles and your scripts in <em>one language</em>, and compile and minify everything to a single file. Once you try it, we're sure you'll love DICSS.</p>
+
+<p>DICSS is fun and easy to use!</p>
 
 <h2>
 <a id="is-it-safe" class="anchor" href="#is-it-safe" aria-hidden="true"><span class="octicon octicon-link"></span></a>Is it safe?</h2>
@@ -49,43 +51,42 @@
 
 <p>Just grab DICSS and stick it wherever you like. DICSS works equally well in your <code>&lt;head&gt;</code> or in your <code>&lt;body&gt;</code>.</p>
 
-<pre><code>&lt;head&gt;
-&lt;script src="dicss.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-</code></pre>
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">head</span>&gt;
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>dicss.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+&lt;/<span class="pl-ent">head</span>&gt;</pre></div>
 
 <p>Then, go ahead and start putting DICSS in! Put 'em everywhere you like. Nobody will judge you for what you do with your DICSS.</p>
 
-<pre><code>DICSS.putIn('body', 'transition: .1s linear');
-DICSS.putIn('p', {
-    "height": "100%",
-    "width": "100%",
-    "a": {
-        "color": "#fff"
+<div class="highlight highlight-js"><pre>DICSS.putIn(<span class="pl-s"><span class="pl-pds">'</span>body<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>transition: .1s linear<span class="pl-pds">'</span></span>);
+DICSS.putIn(<span class="pl-s"><span class="pl-pds">'</span>p<span class="pl-pds">'</span></span>, {
+    <span class="pl-s"><span class="pl-pds">"</span>height<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>100%<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>width<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>100%<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>&amp;.protection<span class="pl-pds">"</span></span><span class="pl-k">:</span> {
+        <span class="pl-s"><span class="pl-pds">"</span>border<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>solid 1px transparent<span class="pl-pds">"</span></span>
+    },
+    <span class="pl-s"><span class="pl-pds">"</span>a<span class="pl-pds">"</span></span><span class="pl-k">:</span> {
+        <span class="pl-s"><span class="pl-pds">"</span>color<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>#fff<span class="pl-pds">"</span></span>
     }
-});
-</code></pre>
+});</pre></div>
 
 <p>And when you're done with a style, you can easily remove it:</p>
 
-<pre><code>DICSS.pullOut('a', 'color');
-</code></pre>
+<div class="highlight highlight-js"><pre>DICSS.pullOut(<span class="pl-s"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>color<span class="pl-pds">'</span></span>);</pre></div>
 
 <h2>
 <a id="the-possibilities-are-endless" class="anchor" href="#the-possibilities-are-endless" aria-hidden="true"><span class="octicon octicon-link"></span></a>The possibilities are endless</h2>
 
 <p>Since DICSS accepts JSON objects as styles, you can keep your CSS organized very methodically:</p>
 
-<pre><code>var widgetDICSS = {
-    'div.widget': {
-        'a': {
-            font: '1em Verdana,Arial,sans-serif',
-            margin: '.5em'
+<div class="highlight highlight-js"><pre><span class="pl-k">var</span> widgetDICSS <span class="pl-k">=</span> {
+    <span class="pl-s"><span class="pl-pds">'</span>div.widget<span class="pl-pds">'</span></span><span class="pl-k">:</span> {
+        <span class="pl-s"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span><span class="pl-k">:</span> {
+            font<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>1em Verdana,Arial,sans-serif<span class="pl-pds">'</span></span>,
+            margin<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>.5em<span class="pl-pds">'</span></span>
         }
-        //... etc
+        <span class="pl-c">//... etc</span>
     }
-};
-</code></pre>
+};</pre></div>
 
 <p>In fact, there's no reason you couldn't put your DICSS in the back-end, and then deliver them to the client, as needed, via REST service.</p>
 
@@ -141,9 +142,14 @@ DICSS.putIn('p', {
 <p>That's okay. While we believe most people are fond of DICSS, we realize that DICSS isn't for everyone. There are plenty of alternatives. Feel free to use them instead. And please, never force someone to use DICSS if they're not willing.</p>
 
 <h2>
+<a id="performance-has-gotten-worse-it-doesnt-come-up-as-fast-as-it-used-to" class="anchor" href="#performance-has-gotten-worse-it-doesnt-come-up-as-fast-as-it-used-to" aria-hidden="true"><span class="octicon octicon-link"></span></a>Performance has gotten worse. It doesn't come up as fast as it used to.</h2>
+
+<p>Maybe you're using DICSS in the lower <code>&lt;body&gt;</code>? Some people experience faster response times using <code>&lt;head&gt;</code> or delivering DICSS through the backend.</p>
+
+<h2>
 <a id="this-is-nuts" class="anchor" href="#this-is-nuts" aria-hidden="true"><span class="octicon octicon-link"></span></a>THIS IS NUTS!</h2>
 
-<p>No, this is DICSS. NUTS is something else.</p>
+<p>No, this is DICSS. <a href="https://github.com/letsgetrandy/NUTS">NUTS</a> is something else.</p>
         </section>
 
         <aside id="sidebar">

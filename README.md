@@ -1,11 +1,13 @@
 [![build status][travis-image]][travis-url]
 
 # DICSS
-Directly injected CSS
+Directly injected CSS - Finally, Sass has some _stiff_ competition!
 
 Forget Sass. Forget LESS. What you want is DICSS. Once you've had DICSS, you won't settle for LESS.
 
 Tired of separate build processes for your CSS and JS files? Fret no more. DICSS is Javascript. That means you can code your styles and your scripts in _one language_, and compile and minify everything to a single file. Once you try it, we're sure you'll love DICSS.
+
+DICSS is fun and easy to use!
 
 ## Is it safe?
 Don't worry. DICSS uses a wrapper.
@@ -13,7 +15,7 @@ Don't worry. DICSS uses a wrapper.
 ## How do you use DICSS?
 Just grab DICSS and stick it wherever you like. DICSS works equally well in your `<head>` or in your `<body>`.
 
-```
+```html
 <head>
     <script src="dicss.js"></script>
 </head>
@@ -21,8 +23,8 @@ Just grab DICSS and stick it wherever you like. DICSS works equally well in your
 
 Then, go ahead and start putting DICSS in! Put 'em everywhere you like. Nobody will judge you for what you do with your DICSS.
 
-```
-DICSS.putIn('body', 'margin: 0');
+```js
+DICSS.putIn('body', 'transition: .1s linear');
 DICSS.putIn('p', {
     "height": "100%",
     "width": "100%",
@@ -37,14 +39,14 @@ DICSS.putIn('p', {
 
 And when you're done with a style, you can easily remove it:
 
-```
+```js
 DICSS.pullOut('a', 'color');
 ```
 
 ## The possibilities are endless
 Since DICSS accepts JSON objects as styles, you can keep your CSS organized very methodically:
 
-```
+```js
 var widgetDICSS = {
 	'div.widget': {
 		'a': {
@@ -91,8 +93,11 @@ Don't overthink it. DICSS is only as hard as you make it.
 ## I don't like DICSS.
 That's okay. While we believe most people are fond of DICSS, we realize that DICSS isn't for everyone. There are plenty of alternatives. Feel free to use them instead. And please, never force someone to use DICSS if they're not willing.
 
+## Performance has gotten worse. It doesn't come up as fast as it used to.
+Maybe you're using DICSS in the lower `<body>`? Some people experience faster response times using `<head>` or delivering DICSS through the backend.
+
 ## THIS IS NUTS!
-No, this is DICSS. NUTS is something else.
+No, this is DICSS. [NUTS](https://github.com/letsgetrandy/NUTS) is something else.
 
 
 [travis-image]: https://img.shields.io/travis/letsgetrandy/DICSS/master.svg?style=flat-square

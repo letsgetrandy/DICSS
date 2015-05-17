@@ -1,4 +1,4 @@
-[![build status][travis-image]][travis-url]
+[![build status][travis-image]][travis-url][![Code Climate](https://codeclimate.com/github/letsgetrandy/DICSS/badges/gpa.svg)](https://codeclimate.com/github/letsgetrandy/DICSS)
 
 # DICSS
 Directly injected CSS - Finally, Sass has some _stiff_ competition!

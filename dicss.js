@@ -85,7 +85,7 @@
                 }
             }
             for (properties in selector) {
-                if (selector.hasOwnProperty(properties) {
+                if (selector.hasOwnProperty(properties)) {
                     addRule(properties, selector[properties]);
                 }
             }

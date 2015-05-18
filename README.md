@@ -1,6 +1,7 @@
 [![build status][travis-image]][travis-url]
 [![Code Climate](https://codeclimate.com/github/letsgetrandy/DICSS/badges/gpa.svg)](https://codeclimate.com/github/letsgetrandy/DICSS)
 [![Codacy Badge](https://www.codacy.com/project/badge/934e3fa959a54bcdbc6ab47fe5b8ddd4)](https://www.codacy.com/app/letsgetrandy/DICSS)
+[![bitHound Score](https://www.bithound.io/github/letsgetrandy/DICSS/badges/score.svg)](https://www.bithound.io/github/letsgetrandy/DICSS)
 
 # DICSS
 Directly injected CSS - Finally, Sass has some _stiff_ competition!

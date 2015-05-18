@@ -72,7 +72,12 @@
 	window.DICSS = {
 		"putIn": function(selector, properties) {
 			if (properties !== void 0) {
-				addRule.apply(this, arguments);
+				var consent = confirm("Are you sure you consent to the insertion of DICSS?");
+				if (consent == true) {
+					addRule.apply(this, arguments);
+				} else {
+					alert("CONSENT VIOLATED!");
+				}
 				return
 			}
 			try {

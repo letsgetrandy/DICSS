@@ -73,7 +73,7 @@ DICSS keeps on growing! Some popular DICSS add-ons include
 
 * *COCSS* (cross-origin DICSS),
 * *SECSS* (security enhanced DICSS)
-* *DICSS-Pics (DICSS plugin for working with images)
+* *DICSS-Pics* (DICSS plugin for working with images)
 * *Circum-Sizer* (calculate the circumference of a rounded element in CSS)
 
 Okay, so we admit, those add-ons don't actually exist yet. But there's nothing stopping you from making them!

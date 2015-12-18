@@ -21,7 +21,7 @@
                     value = rule[property];
                     if (value instanceof Object) {
                         property = (/^:|&/.test(property) ? '' : ' ') + property.replace('&', '');
-						property = property.replace(/,\s?/g, ', ' + selector + ' ');
+                        property = property.replace(/,\s?/g, ', ' + selector + ' ');
                         addRule(selector + property, value);
                         continue;
                     }
